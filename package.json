@@ -1,11 +1,18 @@
 {
-  "name": "tkit",
+  "name": "totkit",
   "version": "1.0.0",
   "description": "npm test",
-  "main": "index.js",
+  "main": "build/totkit.js",
+  "module": "build/totkit.module.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "prepublish": "npm run build"
   },
   "author": "Tobby",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "rollup": "^2.32.1"
+  }
 }
