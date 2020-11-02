@@ -1,3 +1,5 @@
+let THREE = require('three');
+
 const dataV = {
     //three.js 获取点击的对象;
     getObjectFromAxis(e, allItems, width = window.innerWidth, height = window.innerHeight){
